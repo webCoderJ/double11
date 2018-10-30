@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>抢先双11 钜惠免单</title>
+    <script src="./scripts/flxable.js"></script>
+    <script src="./scripts/flxable.css.js"></script>
+    <link rel="stylesheet" href="./styles/fullpage.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="./scripts/jquery.3.3.1.js"></script>
+    <script src="./scripts/jquery.tap.js"></script>
+    <script src="./scripts/fullpage.js"></script>
+    <script src="./scripts/layer.js"></script>
+    <script src="./scripts/wxConf.js"></script>
+    <script src="./scripts/index.js"></script>
+    <div class="layout">
+        <div id="selectDialog">
+            <div class="selectDialogWrapper">
+                <span data-action="closeLay" class="selectDialog_close">x</span>
+                <div class="selectDialog">
+                        <div>
+                            <div class="selectDialog_img" style="background-image: url('./imgs/01-brown.png');"></div>
+                        </div>
+                        <p class="line"></p>
+                        <div class="selectDialog_color clearfix">
+                            <p class="selectDialog_title">颜色分类</p>
+                            <!-- <ul class="mgt5" class="colorDetail">
+                                <li data-action="changeColor" data-payload="{123,23.32}" class="tag active">蓝色</li>
+                            </ul> -->
+                        </div>
+                        <p class="line"></p>
+                        <div class="selectDialog_size">
+                            <p class="selectDialog_title">尺码</p>
+                            <p class="mgt5 tag active">均码</p>
+                        </div>
+                        <p class="line"></p>
+                        <ul class="selectDialog_form">
+                            <li>
+                                <label for="name">购买数量</label>
+                                <div class="input_wrapper">
+                                    <span data-action="delCount" class="count selectDialog_countDetail__btnDel">-</span>
+                                    <input id="count" class="count countInput" value="1" type="number">
+                                    <span data-action="addCount" class="count selectDialog_countDetail__btnPlus">+</span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="name">姓名</label>
+                                <div class="input_wrapper"><div class="input_wrapper"><input id="name"class="name" type="text"></div></div>
+                            </li>
+                            <li>
+                                <label for="address">收货地址</label>
+                                <div class="input_wrapper"><input id="address" class="address" type="text"></div>
+                            </li>
+                            <li>
+                                <label for="phone">联系电话</label>
+                                <div class="input_wrapper"><input id="phone" class="phone" type="text"></div>
+                            </li>
+                            <!-- <li><button class="selectDialog_submit">立即购买</button></li> -->
+                            <li>
+                                <!-- <img class="buyNow" data-action="buyConfirm" src="./imgs/button.png"> -->
+                                <span class="buyNow" data-action="buyConfirm">确认购买</span>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div id="full">
+            <div class="section">
+                <img class="fullImg" src="./imgs/index.png">
+                <p class="next active" id="next">∨</p>
+            </div>
+            <div class="section">
+                <div class="slide"><img class="fullImg" src="./imgs/01-brown.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/01-pink.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/01-detail-.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/01-detail-1.png" alt=""></div>
+                <img class="buyNowBtn" data-action="buyNow" src="./imgs/button.png">
+            </div>
+            <div class="section">
+                <div class="slide"><img class="fullImg" src="./imgs/02-blue.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/02-pink.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/02-red.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/02-detail-.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/02-detail-1.png" alt=""></div>
+                <img class="buyNowBtn" data-action="buyNow" src="./imgs/button.png">
+            </div>
+            <div class="section">
+                <div class="slide"><img class="fullImg" src="./imgs/03-blue.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/03-brown.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/03-pink.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/01-detail-.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/01-detail-1.png" alt=""></div>
+                <img class="buyNowBtn" data-action="buyNow" src="./imgs/button.png">
+            </div>
+            <div class="section">
+                <div class="slide"><img class="fullImg" src="./imgs/04-gray.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/04-orange.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/04-white.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/04-detail-.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/04-detail-1.png" alt=""></div>
+                <img class="buyNowBtn" data-action="buyNow" src="./imgs/button.png">
+            </div>
+            <div class="section">
+                <div class="slide"><img class="fullImg" src="./imgs/05-blue.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/05-pink.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/05-detail-.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/05-detail-1.png" alt=""></div>
+                <img class="buyNowBtn" data-action="buyNow" src="./imgs/button.png">
+            </div>
+            <div class="section">
+                <div class="slide"><img class="fullImg" src="./imgs/06-purple.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/06-red.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/06-white.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/06-detail-.png" alt=""></div>
+                <div class="slide"><img class="fullImg" src="./imgs/06-detail-1.png" alt=""></div>
+                <img class="buyNowBtn" data-action="buyNow" src="./imgs/button.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
